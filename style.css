@@ -114,6 +114,7 @@ body{
     margin: 5px;
     border: 1px black solid;
     height: calc(100% - 14px);
+    max-height:45vh;
 }
 .weather-data{
     /* background-color: rgba(255, 99, 71, 0.7); */
