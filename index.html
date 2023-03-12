@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MyWeather</title>
+</head>
+<body>
+    <ul class="navbar">
+            <img src="images/weatherAppIcon.png" id="icon">
+            <a class="NavbarItems" id="myweathers" href="/">My Weather</a>
+            <a class="NavbarItems" id="about" href="about.html">About Me</a>
+            <a class="NavbarItems" id="help" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Help</a>
+            <div id="searchbar">
+                <sear id="search"><input id="place" placeholder="You can search here too ^^" type=text style="border:1px black solid; margin:5px"></sear>
+            </div>
+    </ul>
+    <div id="searchbar">
+        <sear id="search"><input id="place2" type=text placeholder="Search"></sear> <button id="searchbtn" onClick="searching()">Go</button>
+    </div>
+    <div class="location">
+        <div class="locationText placenames">
+            <name id="name"></name>
+            <country id="country"></country>
+        </div>
+        <div class="locationText">
+            <coordinates id="coordinates"></coordinates>
+            <timezone id="timezone"></timezone>
+            <localTime id="localTime"></localTime>
+        </div>
+        <img id="placeImage" src="" alt="Just an Image of the place">
+    </div>
+    <div class="weather-data">
+        <div class="wind Data">
+            <img src="images/wind.avif" class="weatherIcons">
+            <windElement id="winds" ><br/><br/><br/> Wind Parameters <br/> will appear here</windElement>
+        </div>
+        <div class="temp Data">
+            <img src="images/tempIcon.png" alt="" class="weatherIcons">
+            <tempElement id="temps" ><br/><br/><br/> Temperature Parameters <br/> will appear here</tempElement>
+        </div>
+        <div class="cloud Data">
+            <img src="images/cloud.png" class="weatherIcons">
+            <cloudElement id="clouds" ><br/><br/><br/> Cloud Parameters <br/> will appear here</cloudElement>
+        </div>
+        <div class="other Data">
+            <img src="images/others.png" class="weatherIcons">
+            <otherElement id="others" ><br/><br/><br/> Other Parameters <br/> will appear here</otherElement>
+        </div>
+        <div class="climate Data" style="background-color: rgb(5, 0, 146);">
+            <climateElement id="climate"><br/><br/><br/> Climate <br/>will apear here</climateElement>
+        </div>
+    </div>
+      
+    <script src="script.js"></script>
+</body>
+</html>
