@@ -113,7 +113,8 @@ body{
     border-radius: 10px;
     margin: 5px;
     border: 1px black solid;
-    max-height:45vh;
+    height: calc(100% - 14px);
+    max-height: 45vh;
 }
 .weather-data{
     /* background-color: rgba(255, 99, 71, 0.7); */
@@ -124,7 +125,6 @@ body{
     justify-content: space-between;
     border-radius: 10px;
     gap:8px;
-    margin:10px;
     transition: background-color 0.5s ease-in-out;
 }
 .weatherIcons{
@@ -184,6 +184,9 @@ body{
     }
     .location{
         flex-direction: column;
+    }
+    .locationText{
+        font-size: large;
     }
     #PlaceImage{
         width:90vw;
